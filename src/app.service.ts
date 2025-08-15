@@ -5,7 +5,7 @@ import { UserCreatedEvent } from './events/user-created.event';
 
 @Injectable()
 export class AppService {
-  constructor(private readonly eventEmitter: EventEmitter2) { }
+  constructor(private readonly eventEmitter: EventEmitter2) {}
   private readonly logger = new Logger(AppService.name);
   getHello(): string {
     return 'Hello World!';
